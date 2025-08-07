@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Include cache directory in backup -->
+    <include domain="sharedpref" path="."/>
+    <!-- Exclude sensitive data -->
+    <exclude domain="database" path="sensitive.db"/>
+</full-backup-content>
