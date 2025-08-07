@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mocha</string>
+    <string name="loading">Carregando...</string>
+    <string name="error_loading">Erro ao carregar</string>
+    <string name="retry">Tentar novamente</string>
+    <string name="no_internet">Sem conexão com a internet</string>
+    <string name="refresh">Atualizar</string>
+    <string name="share">Compartilhar</string>
+    <string name="home">Início</string>
+    <string name="settings">Configurações</string>
+    <string name="about">Sobre</string>
+    <string name="website_url">https://v2mahcy4mgu2u.mocha.app</string>
+    <string name="app_description">Aplicativo mobile oficial do Mocha</string>
+</resources>
