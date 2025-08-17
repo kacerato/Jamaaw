@@ -70,21 +70,21 @@ export default function SuggestionsPage() {
             </div>
             
             <h1 className="text-3xl font-bold text-slate-900 mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
-              Sugestão Enviada com Sucesso!
+              Solicitação Enviada com Sucesso!
             </h1>
             
             <p className="text-xl text-slate-600 mb-8">
-              Obrigado por contribuir com a melhoria dos serviços em Maceió. 
-              Nossa equipe irá analisar sua sugestão em breve.
+              Obrigado por solicitar nossa internet fibra óptica. 
+              Nossa equipe entrará em contato em breve para agendar a instalação.
             </p>
             
             <div className="space-y-4 mb-8">
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                <h3 className="font-semibold text-blue-900 mb-2">O que acontece agora?</h3>
+                <h3 className="font-semibold text-blue-900 mb-2">Próximos passos:</h3>
                 <ul className="text-sm text-blue-800 space-y-2 text-left">
-                  <li>• Nossa equipe administrativa irá revisar sua sugestão</li>
-                  <li>• Se aprovada, a rua será adicionada ao nosso cronograma</li>
-                  <li>• Você pode acompanhar o progresso no mapa de ruas</li>
+                  <li>• Nossa equipe comercial entrará em contato em até 24h</li>
+                  <li>• Agendaremos uma visita técnica gratuita</li>
+                  <li>• Você pode acompanhar a cobertura no mapa de áreas</li>
                 </ul>
               </div>
             </div>
@@ -94,13 +94,13 @@ export default function SuggestionsPage() {
                 onClick={() => setIsSubmitted(false)}
                 className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
               >
-                Enviar Nova Sugestão
+                Nova Solicitação
               </button>
               <a
                 href="/mapa"
                 className="bg-slate-100 text-slate-700 px-6 py-3 rounded-lg font-semibold hover:bg-slate-200 transition-colors inline-block"
               >
-                Ver Mapa de Ruas
+                Ver Cobertura
               </a>
             </div>
           </div>
@@ -116,10 +116,10 @@ export default function SuggestionsPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-slate-900 mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
-            Sugerir Nova Rua
+            Solicitar Instalação
           </h1>
           <p className="text-xl text-slate-600">
-            Ajude-nos a identificar ruas que precisam de organização de cabeamento em Maceió
+            Solicite a instalação da nossa internet fibra óptica na sua região
           </p>
         </div>
 
@@ -131,7 +131,7 @@ export default function SuggestionsPage() {
                 <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
                   <MessageCircle className="w-5 h-5 text-blue-600" />
                 </div>
-                <h2 className="text-xl font-semibold text-slate-900">Formulário de Sugestão</h2>
+                <h2 className="text-xl font-semibold text-slate-900">Solicitar Instalação</h2>
               </div>
 
               {error && (
@@ -144,7 +144,7 @@ export default function SuggestionsPage() {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="street_name" className="block text-sm font-medium text-slate-700 mb-2">
-                      Nome da Rua *
+                      Endereço Completo *
                     </label>
                     <input
                       type="text"
@@ -153,14 +153,14 @@ export default function SuggestionsPage() {
                       value={formData.street_name}
                       onChange={handleChange}
                       required
-                      placeholder="Ex: Rua das Flores"
+                      placeholder="Ex: Rua das Flores, 123"
                       className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                     />
                   </div>
 
                   <div>
                     <label htmlFor="neighborhood" className="block text-sm font-medium text-slate-700 mb-2">
-                      Bairro
+                      Bairro *
                     </label>
                     <input
                       type="text"
@@ -168,6 +168,7 @@ export default function SuggestionsPage() {
                       name="neighborhood"
                       value={formData.neighborhood}
                       onChange={handleChange}
+                      required
                       placeholder="Ex: Centro"
                       className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                     />
@@ -176,7 +177,7 @@ export default function SuggestionsPage() {
 
                 <div>
                   <label htmlFor="description" className="block text-sm font-medium text-slate-700 mb-2">
-                    Descrição da Situação
+                    Observações Adicionais
                   </label>
                   <textarea
                     id="description"
@@ -184,7 +185,7 @@ export default function SuggestionsPage() {
                     value={formData.description}
                     onChange={handleChange}
                     rows={4}
-                    placeholder="Descreva o problema com os cabos nesta rua..."
+                    placeholder="Descreva suas necessidades específicas de internet, horário preferencial para contato, etc..."
                     className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   />
                 </div>
@@ -192,7 +193,7 @@ export default function SuggestionsPage() {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="suggested_by_name" className="block text-sm font-medium text-slate-700 mb-2">
-                      Seu Nome
+                      Seu Nome *
                     </label>
                     <input
                       type="text"
@@ -200,6 +201,7 @@ export default function SuggestionsPage() {
                       name="suggested_by_name"
                       value={formData.suggested_by_name}
                       onChange={handleChange}
+                      required
                       placeholder="Seu nome completo"
                       className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                     />
@@ -207,7 +209,7 @@ export default function SuggestionsPage() {
 
                   <div>
                     <label htmlFor="suggested_by_email" className="block text-sm font-medium text-slate-700 mb-2">
-                      Seu Email
+                      Seu Email *
                     </label>
                     <input
                       type="email"
@@ -215,6 +217,7 @@ export default function SuggestionsPage() {
                       name="suggested_by_email"
                       value={formData.suggested_by_email}
                       onChange={handleChange}
+                      required
                       placeholder="seu@email.com"
                       className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                     />
@@ -235,7 +238,7 @@ export default function SuggestionsPage() {
                     ) : (
                       <div className="flex items-center justify-center space-x-2">
                         <Send className="w-5 h-5" />
-                        <span>Enviar Sugestão</span>
+                        <span>Solicitar Instalação</span>
                       </div>
                     )}
                   </button>
@@ -251,31 +254,31 @@ export default function SuggestionsPage() {
                 <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
                   <MapPin className="w-5 h-5 text-green-600" />
                 </div>
-                <h3 className="text-lg font-semibold text-slate-900">Por que sugerir?</h3>
+                <h3 className="text-lg font-semibold text-slate-900">Vantagens da nossa fibra óptica:</h3>
               </div>
               
               <ul className="space-y-3 text-sm text-slate-600">
                 <li className="flex items-start space-x-2">
                   <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                  <span>Ajuda a priorizar áreas com maior necessidade</span>
+                  <span>Internet de alta velocidade até 1 Gbps</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                  <span>Contribui para um Maceió mais organizado</span>
+                  <span>Upload e download simétricos</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                  <span>Melhora a segurança urbana</span>
+                  <span>Conexão estável 24/7</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                  <span>Facilita futuras manutenções</span>
+                  <span>Suporte técnico especializado</span>
                 </li>
               </ul>
             </div>
 
             <div className="bg-blue-50 border border-blue-200 rounded-2xl p-6">
-              <h3 className="text-lg font-semibold text-blue-900 mb-3">Como funciona?</h3>
+              <h3 className="text-lg font-semibold text-blue-900 mb-3">Processo de instalação:</h3>
               
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
@@ -283,8 +286,8 @@ export default function SuggestionsPage() {
                     1
                   </div>
                   <div>
-                    <p className="font-medium text-blue-900">Você sugere</p>
-                    <p className="text-sm text-blue-700">Preenche o formulário com as informações da rua</p>
+                    <p className="font-medium text-blue-900">Você solicita</p>
+                    <p className="text-sm text-blue-700">Preenche o formulário com suas informações de contato</p>
                   </div>
                 </div>
                 
@@ -293,8 +296,8 @@ export default function SuggestionsPage() {
                     2
                   </div>
                   <div>
-                    <p className="font-medium text-blue-900">Analisamos</p>
-                    <p className="text-sm text-blue-700">Nossa equipe avalia a necessidade e prioridade</p>
+                    <p className="font-medium text-blue-900">Entramos em contato</p>
+                    <p className="text-sm text-blue-700">Nossa equipe comercial liga em até 24h para agendar visita</p>
                   </div>
                 </div>
                 
@@ -303,8 +306,8 @@ export default function SuggestionsPage() {
                     3
                   </div>
                   <div>
-                    <p className="font-medium text-blue-900">Executamos</p>
-                    <p className="text-sm text-blue-700">Se aprovada, incluímos no cronograma de trabalho</p>
+                    <p className="font-medium text-blue-900">Instalamos</p>
+                    <p className="text-sm text-blue-700">Realizamos a instalação gratuita e você já fica conectado</p>
                   </div>
                 </div>
               </div>

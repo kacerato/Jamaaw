@@ -1,4 +1,4 @@
-import { Cable, MapPin, Menu, X, User, LogOut } from 'lucide-react';
+import { Wifi, MapPin, Menu, X, User, LogOut } from 'lucide-react';
 import MaceioFlag from '@/react-app/components/MaceioFlag';
 import NotificationSystem from '@/react-app/components/NotificationSystem';
 import { useState } from 'react';
@@ -27,14 +27,14 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center">
-              <Cable className="w-6 h-6 text-white" />
+            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+              <Wifi className="w-6 h-6 text-white" />
             </div>
             <div>
               <h1 className="text-xl font-bold text-slate-800" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                JAMAAW
+                Parceiros da Net
               </h1>
-              <p className="text-xs text-slate-600">Organização de Cabeamento</p>
+              <p className="text-xs text-slate-600">Internet de Alta Velocidade</p>
             </div>
           </Link>
 
@@ -54,7 +54,7 @@ export default function Header() {
                 isActive('/mapa') ? 'text-blue-600' : 'text-slate-700 hover:text-blue-600'
               }`}
             >
-              Mapa de Ruas
+              Cobertura
             </Link>
             <Link
               to="/sugestoes"
@@ -62,7 +62,7 @@ export default function Header() {
                 isActive('/sugestoes') ? 'text-blue-600' : 'text-slate-700 hover:text-blue-600'
               }`}
             >
-              Sugerir Rua
+              Solicitar Instalação
             </Link>
             {user && (
               <Link
@@ -82,7 +82,7 @@ export default function Header() {
               <MaceioFlag />
               <div className="flex items-center space-x-2 text-sm text-slate-600">
                 <MapPin className="w-4 h-4" />
-                <span>Maceió - AL</span>
+                <span>Região Sul</span>
               </div>
             </div>
             
@@ -145,7 +145,7 @@ export default function Header() {
                 isActive('/mapa') ? 'bg-blue-50 text-blue-600' : 'text-slate-700 hover:bg-slate-50'
               }`}
             >
-              Mapa de Ruas
+              Cobertura
             </Link>
             <Link
               to="/sugestoes"
@@ -154,7 +154,7 @@ export default function Header() {
                 isActive('/sugestoes') ? 'bg-blue-50 text-blue-600' : 'text-slate-700 hover:bg-slate-50'
               }`}
             >
-              Sugerir Rua
+              Solicitar Instalação
             </Link>
             {user && (
               <Link
