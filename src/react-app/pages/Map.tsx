@@ -83,10 +83,10 @@ export default function MapPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-slate-900 mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
-            Mapa de Ruas - Maceió
+            Mapa de Cobertura
           </h1>
           <p className="text-xl text-slate-600 mb-6">
-            Acompanhe o progresso dos serviços de organização de cabeamento em tempo real
+            Acompanhe a expansão da nossa rede de fibra óptica e verifique a cobertura na sua região
           </p>
 
           {/* Status Cards */}
@@ -94,7 +94,7 @@ export default function MapPage() {
             <div className="bg-white p-4 rounded-lg shadow-sm border border-slate-200">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm font-medium text-slate-600">Total de Ruas</p>
+                  <p className="text-sm font-medium text-slate-600">Áreas Mapeadas</p>
                   <p className="text-2xl font-bold text-slate-900">{streets.length}</p>
                 </div>
                 <MapPin className="w-8 h-8 text-slate-400" />
@@ -104,7 +104,7 @@ export default function MapPage() {
             <div className="bg-white p-4 rounded-lg shadow-sm border border-green-200">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm font-medium text-green-600">Concluídas</p>
+                  <p className="text-sm font-medium text-green-600">Com Cobertura</p>
                   <p className="text-2xl font-bold text-green-700">{getStatusCount('completed')}</p>
                 </div>
                 <CheckCircle className="w-8 h-8 text-green-500" />
@@ -114,20 +114,20 @@ export default function MapPage() {
             <div className="bg-white p-4 rounded-lg shadow-sm border border-yellow-200">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm font-medium text-yellow-600">Em Andamento</p>
+                  <p className="text-sm font-medium text-yellow-600">Em Instalação</p>
                   <p className="text-2xl font-bold text-yellow-700">{getStatusCount('in_progress')}</p>
                 </div>
                 <Clock className="w-8 h-8 text-yellow-500" />
               </div>
             </div>
             
-            <div className="bg-white p-4 rounded-lg shadow-sm border border-red-200">
+            <div className="bg-white p-4 rounded-lg shadow-sm border border-blue-200">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm font-medium text-red-600">Planejadas</p>
-                  <p className="text-2xl font-bold text-red-700">{getStatusCount('planned')}</p>
+                  <p className="text-sm font-medium text-blue-600">Planejadas</p>
+                  <p className="text-2xl font-bold text-blue-700">{getStatusCount('planned')}</p>
                 </div>
-                <AlertCircle className="w-8 h-8 text-red-500" />
+                <AlertCircle className="w-8 h-8 text-blue-500" />
               </div>
             </div>
           </div>
@@ -143,9 +143,9 @@ export default function MapPage() {
               onChange={(e) => setSelectedStatus(e.target.value)}
               className="bg-white border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
             >
-              <option value="all">Todas as ruas</option>
-              <option value="completed">Concluídas</option>
-              <option value="in_progress">Em andamento</option>
+              <option value="all">Todas as áreas</option>
+              <option value="completed">Com cobertura</option>
+              <option value="in_progress">Em instalação</option>
               <option value="planned">Planejadas</option>
             </select>
           </div>
