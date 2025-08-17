@@ -32,9 +32,9 @@ export default function Header() {
             </div>
             <div>
               <h1 className="text-xl font-bold text-slate-800" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                JAMAAW
+                Parceiros da Net
               </h1>
-              <p className="text-xs text-slate-600">Organização de Cabeamento</p>
+              <p className="text-xs text-slate-600">Internet Fibra</p>
             </div>
           </Link>
 

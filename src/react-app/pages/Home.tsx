@@ -126,7 +126,7 @@ export default function Home() {
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <img 
                   src="https://mocha-cdn.com/01984cbb-558c-72f6-b996-f002620e6f95/IMG-20250726-WA0017.jpg"
-                  alt="Equipe JAMAAW trabalhando na organização de cabos em Maceió"
+                  alt="Equipe Parceiros da Net trabalhando na organização de cabos em Maceió"
                   className="w-full h-auto object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent"></div>
@@ -295,7 +295,7 @@ export default function Home() {
             <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
               <img 
                 src="https://mocha-cdn.com/01984cbb-558c-72f6-b996-f002620e6f95/IMG-20250726-WA0017.jpg"
-                alt="Equipe JAMAAW trabalhando na organização de cabos"
+                alt="Equipe Parceiros da Net trabalhando na organização de cabos"
                 className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent group-hover:from-black/70 transition-all duration-300"></div>
@@ -357,8 +357,8 @@ export default function Home() {
                   <Cable className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold" style={{ fontFamily: 'Poppins, sans-serif' }}>JAMAAW</h3>
-                  <p className="text-slate-400 text-sm">Organização de Cabeamento</p>
+                                     <h3 className="text-xl font-bold" style={{ fontFamily: 'Poppins, sans-serif' }}>Parceiros da Net</h3>
+                   <p className="text-slate-400 text-sm">Internet Fibra</p>
                 </div>
               </div>
               <p className="text-slate-400 leading-relaxed mb-4">
@@ -397,7 +397,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2025 JAMAAW. Todos os direitos reservados.</p>
+            <p>&copy; 2025 Parceiros da Net. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>

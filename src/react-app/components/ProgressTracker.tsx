@@ -74,7 +74,7 @@ export default function ProgressTracker() {
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-lg font-semibold text-slate-900 flex items-center space-x-2">
           <TrendingUp className="w-5 h-5 text-blue-600" />
-          <span>Progresso JAMAAW</span>
+          <span>Progresso Parceiros da Net</span>
         </h3>
         <button
           onClick={() => setIsVisible(false)}
@@ -142,7 +142,7 @@ export default function ProgressTracker() {
       {/* Footer */}
       <div className="mt-4 pt-3 border-t border-slate-200 text-center">
         <p className="text-xs text-slate-500">
-          Atualização em tempo real • JAMAAW 2025
+          Atualização em tempo real • Parceiros da Net 2025
         </p>
       </div>
     </div>

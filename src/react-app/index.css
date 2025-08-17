@@ -1,12 +1,12 @@
+/* Import Leaflet CSS */
+@import 'leaflet/dist/leaflet.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Import Leaflet CSS */
-@import 'leaflet/dist/leaflet.css';
-
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Poppins, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 /* Fix Leaflet marker icons */

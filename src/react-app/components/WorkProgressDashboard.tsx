@@ -187,7 +187,7 @@ export default function WorkProgressDashboard({ streets }: WorkProgressDashboard
           <div className="bg-gradient-to-r from-blue-600 to-orange-500 text-white p-4">
             <div className="flex items-center justify-between">
               <div>
-                <h3 className="font-bold text-lg">Dashboard JAMAAW</h3>
+                <h3 className="font-bold text-lg">Dashboard Parceiros da Net</h3>
                 <p className="text-blue-100 text-sm">Progresso em Tempo Real</p>
               </div>
               <button
@@ -335,7 +335,7 @@ export default function WorkProgressDashboard({ streets }: WorkProgressDashboard
             <div className="flex items-center justify-between text-xs text-slate-600">
               <div className="flex items-center space-x-1">
                 <Users className="w-3 h-3" />
-                <span>Equipe JAMAAW</span>
+                <span>Equipe Parceiros da Net</span>
               </div>
               <div className="flex items-center space-x-1">
                 <Zap className="w-3 h-3" />
