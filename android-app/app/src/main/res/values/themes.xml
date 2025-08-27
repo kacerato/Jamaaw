@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    <!-- Base Mocha Theme -->
+    <style name="Theme.MochaApp" parent="Theme.Material3.DayNight">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/mocha_primary</item>
+        <item name="colorOnPrimary">@color/mocha_on_primary</item>
+        <item name="colorPrimaryContainer">@color/mocha_primary_variant</item>
+        <item name="colorOnPrimaryContainer">@color/mocha_on_primary</item>
+        
+        <!-- Secondary colors -->
+        <item name="colorSecondary">@color/mocha_secondary</item>
+        <item name="colorOnSecondary">@color/mocha_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/mocha_secondary_variant</item>
+        <item name="colorOnSecondaryContainer">@color/mocha_on_secondary</item>
+        
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/mocha_background</item>
+        <item name="colorOnBackground">@color/mocha_on_background</item>
+        <item name="colorSurface">@color/mocha_surface</item>
+        <item name="colorOnSurface">@color/mocha_on_surface</item>
+        
+        <!-- Other colors -->
+        <item name="colorAccent">@color/mocha_accent</item>
+        <item name="colorError">@color/mocha_error</item>
+        
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/mocha_primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+        
+        <!-- Navigation bar -->
+        <item name="android:navigationBarColor">@color/mocha_background</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+    
+    <!-- Splash screen theme -->
+    <style name="Theme.MochaApp.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/mocha_primary</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <item name="postSplashScreenTheme">@style/Theme.MochaApp</item>
+    </style>
+    
+    <!-- Toolbar style -->
+    <style name="MochaToolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/mocha_primary</item>
+        <item name="titleTextColor">@color/mocha_on_primary</item>
+        <item name="subtitleTextColor">@color/mocha_on_primary</item>
+    </style>
+    
+    <!-- Button style -->
+    <style name="MochaButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/mocha_secondary</item>
+        <item name="android:textColor">@color/mocha_on_secondary</item>
+    </style>
+    
+    <!-- Card style -->
+    <style name="MochaCard" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/mocha_surface</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardCornerRadius">12dp</item>
+    </style>
+
+</resources>

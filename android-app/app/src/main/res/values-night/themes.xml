@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Dark Mocha Theme -->
+    <style name="Theme.MochaApp" parent="Theme.Material3.DayNight">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/mocha_secondary</item>
+        <item name="colorOnPrimary">@color/mocha_on_secondary</item>
+        <item name="colorPrimaryContainer">@color/mocha_secondary_variant</item>
+        <item name="colorOnPrimaryContainer">@color/mocha_on_secondary</item>
+        
+        <!-- Secondary colors -->
+        <item name="colorSecondary">@color/mocha_accent</item>
+        <item name="colorOnSecondary">@color/mocha_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/latte</item>
+        <item name="colorOnSecondaryContainer">@color/espresso</item>
+        
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/mocha_dark_background</item>
+        <item name="colorOnBackground">@color/mocha_on_dark_background</item>
+        <item name="colorSurface">@color/mocha_dark_surface</item>
+        <item name="colorOnSurface">@color/mocha_on_dark_surface</item>
+        
+        <!-- Other colors -->
+        <item name="colorAccent">@color/caramel</item>
+        <item name="colorError">@color/mocha_error</item>
+        
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/espresso</item>
+        <item name="android:windowLightStatusBar">false</item>
+        
+        <!-- Navigation bar -->
+        <item name="android:navigationBarColor">@color/mocha_dark_background</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+
+</resources>

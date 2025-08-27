@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary colors -->
+    <color name="mocha_primary">#8B4513</color>
+    <color name="mocha_primary_variant">#654321</color>
+    <color name="mocha_secondary">#D2691E</color>
+    <color name="mocha_secondary_variant">#A0522D</color>
+    
+    <!-- Background colors -->
+    <color name="mocha_background">#FFF8DC</color>
+    <color name="mocha_surface">#FFFFFF</color>
+    <color name="mocha_dark_background">#2F1B14</color>
+    <color name="mocha_dark_surface">#3E2723</color>
+    
+    <!-- Text colors -->
+    <color name="mocha_on_primary">#FFFFFF</color>
+    <color name="mocha_on_secondary">#FFFFFF</color>
+    <color name="mocha_on_background">#3E2723</color>
+    <color name="mocha_on_surface">#3E2723</color>
+    <color name="mocha_on_dark_background">#F5F5DC</color>
+    <color name="mocha_on_dark_surface">#F5F5DC</color>
+    
+    <!-- Accent colors -->
+    <color name="mocha_accent">#CD853F</color>
+    <color name="mocha_error">#CF6679</color>
+    
+    <!-- Standard colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    
+    <!-- Additional coffee-inspired colors -->
+    <color name="espresso">#3C2415</color>
+    <color name="latte">#D4A574</color>
+    <color name="cream">#F5F5DC</color>
+    <color name="caramel">#E8A317</color>
+</resources>
